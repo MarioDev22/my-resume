@@ -384,6 +384,7 @@ img {
         z-index: var(--z-fixed);
         transition: .3s;
     }
+
 }
 
 .nav__logo,
@@ -438,6 +439,7 @@ img {
 
 .active {
     color: var(--title-color);
+    font-weight: bold;
 }
 
 
@@ -786,6 +788,7 @@ img {
         color: var(--text-color-light);
     }
 
+
 }
 
 
@@ -831,6 +834,7 @@ img {
 
     .references__contact {
         font-size: .89rem;
+        line-height: 1.7;
     }
 
     .section {
@@ -960,4 +964,10 @@ img {
         margin-right: auto;
     }
 
+}
+
+@media screen and (max-width:480px) {
+    .references__content {
+        line-height: 1.7;
+    }
 }

@@ -32,9 +32,26 @@ function linkAction() {
     navMenu.classList.remove('show-menu')
 }
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
+// remove active class from all nav link items
+
+const changeActiveItem = () => {
+    navLink.forEach(item => {
+        item.classList.remove('active');
+    })
+}
+
+
+// Active Link
+
+navLink.forEach(item => {
+    item.addEventListener('click' , () => {
+        changeActiveItem();
+        item.classList.add('active');
+    })
+})
 
 
 /*======================== SHOW SCROLL TOP ============================= */
